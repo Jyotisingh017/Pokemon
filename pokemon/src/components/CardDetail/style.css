@@ -1,0 +1,15 @@
+.main_div {
+    display:inline-flex;
+}
+
+.container {
+width: 40%;
+}
+
+.grid {
+    display:grid;
+}
+
+.padding {
+    padding: 2%; 
+}

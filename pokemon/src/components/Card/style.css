@@ -12,6 +12,8 @@
 .card {
     background: white;
     border-radius: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 .card_container {

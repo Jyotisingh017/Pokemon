@@ -1,12 +1,17 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './style.css';
 
 export function CardLayout({pokemon}) {
    // console.log(pokemon)
+   /*const onTrigger = (event) => {
+    handleclick(keyvalue);
+    event.preventDefault();
+}*/
     return (  
-        
+      <Link className='card' to={{ pathname: `/pokemon/${pokemon.name}` }}>
       <div className="card card_container">
-      <img src={pokemon.sprites.front_default} className="card_img" alt="..."/>
+      <img src={pokemon.sprites.front_default} className="card_img" alt="There is no sprite."/>
       <div className="card_name">
         <label>{pokemon.name}</label>
      </div>
@@ -18,7 +23,7 @@ export function CardLayout({pokemon}) {
               })}</div>
      
       </div>
-    
+    </Link>
     );
 
 }
