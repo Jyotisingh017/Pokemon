@@ -4,7 +4,7 @@ import { domain } from '../../shared/endpoint';
 import {getPokemon} from '../../services/pokemon';
 import './style.css';
 
-export default function Pokemondetail() {
+export function Pokemondetail() {
   const location = useLocation();
 
   const [pokemon, setPokemon] = useState([]);

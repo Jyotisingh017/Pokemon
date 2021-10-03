@@ -3,11 +3,6 @@ import { Link } from 'react-router-dom';
 import './style.css';
 
 export function CardLayout({pokemon}) {
-   // console.log(pokemon)
-   /*const onTrigger = (event) => {
-    handleclick(keyvalue);
-    event.preventDefault();
-}*/
     return (  
       <Link className='card' to={{ pathname: `/pokemon/${pokemon.name}` }}>
       <div className="card card_container">

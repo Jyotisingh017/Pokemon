@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import './App.css';
-import { domain } from './shared/endpoint';
-import { getAllPokemon, getPokemon} from './services/pokemon';
-import {CardLayout} from './components/Card/Card';
+import '../../App.css';
+import { domain } from '../../shared/endpoint';
+import { getAllPokemon, getPokemon} from '../../services/pokemon';
+import {CardLayout} from '../Card/Card';
 
-function App() {
+export function Pokemondashboard() {
   const [pokemonData, setPokemonData] = useState([]);
   const [nextUrl, setNextUrl] = useState('');
   const [prevUrl, setPrevUrl] = useState('');
@@ -52,30 +52,37 @@ function App() {
     setIsLoading(false);
   }
 
+  const sortPokemonsByName = () => {
+    const newDataSet = [...pokemonData];
+    let sortedData = newDataSet.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0))
+    setPokemonData(sortedData);
+  }
+
   return (
     <div>
+      <div className="align">
+              <button className="btn" onClick={prev}>Prev</button>
+              <button className="btn" onClick={next}>Next</button>
+              <button className="btn" onClick={sortPokemonsByName}>Sort By Name</button>
+     </div>
+      <div className="grid-container">
       { 
         isLoading ? <h1>Loading .... </h1> : (
          <>
-         <div className="align">
-              <button className="btn" onClick={prev}>Prev</button>
-              <button className="btn" onClick={next}>Next</button>
-          </div>
            {
              pokemonData.map((pokemon, i) => {
                return <CardLayout key={i} pokemon={pokemon}/>
              })
            }
-           
-          <div className="align">
-              <button className="btn" onClick={prev}>Prev</button>
-              <button className="btn" onClick={next}>Next</button>
-          </div>
          </>
         )
       }
     </div>
-  );
+    <div className="align">
+              <button className="btn" onClick={prev}>Prev</button>
+              <button className="btn" onClick={next}>Next</button>
+          </div>
+    </div>
+    );
 }
 
-export default App;

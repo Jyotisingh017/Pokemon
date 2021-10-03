@@ -1,5 +1,5 @@
-import Pokemondashboard from './Pokemondashboard';
-import Pokemondetail from './components/CardDetail/Pokemondetail';
+import {Pokemondashboard} from './components/Dashboard/Pokemondashboard';
+import {Pokemondetail} from './components/CardDetail/Pokemondetail';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = () => {

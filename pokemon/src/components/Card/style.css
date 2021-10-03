@@ -17,10 +17,9 @@
 }
 
 .card_container {
-    width: 40%;
-      display: grid;
+      width: 90%;
       padding: 2%;
-      grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+      /* grid-template-columns: repeat(auto-fit,minmax(300px, 1fr)); */
       /* border-width: 2px; */
       box-shadow: 0px 2px;
       border-style: solid;

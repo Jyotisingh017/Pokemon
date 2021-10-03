@@ -1,24 +1,23 @@
-.card_container {
-  width: 40%;
-    display: grid;
-    padding: 2%;
-    box-shadow: 0px 2px;
-    border-style: solid;
-    border-color: coral;
-    margin:2%;
-}
-
 .card_layout {
-  display:inline-flex;
+display:inline-flex;
 }
 
 .btn {
-  margin: 2%;
-  background-color: rgba(144,206,241,0.3);
-  color:#000;
-  box-shadow: 0px 0px 1px 1px #90CEF1;
+margin: 2%;
+background-color: rgba(144,206,241,0.3);
+color:#000;
+box-shadow: 0px 0px 1px 1px #90CEF1;
 }
 
 .align {
-  text-align: center;
+text-align: center;
+background-color: #D0BCDB;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(auto-fill, 300px) 300px;
+grid-gap: 10px;
+background-color: #D0BCDB;
+padding: 10px;
 }
