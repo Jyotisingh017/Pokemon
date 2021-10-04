@@ -1,11 +1,11 @@
-.card_name {
+.card-name {
     text-align: left;
     text-transform: capitalize;
     font-weight: 800;
     padding-bottom: 2%;
 }
 
-.card_img {
+.card-img {
     text-align: center;
 }
 
@@ -16,16 +16,14 @@
     color: black;
 }
 
-.card_container {
+.card-container {
       width: 90%;
       padding: 2%;
-      /* grid-template-columns: repeat(auto-fit,minmax(300px, 1fr)); */
-      /* border-width: 2px; */
       box-shadow: 0px 2px;
       border-style: solid;
       border-color: coral;
   }
 
-  .card_bold {
+  .card-bold {
     font-weight: bold;
   }

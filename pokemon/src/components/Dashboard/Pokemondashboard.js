@@ -17,7 +17,6 @@ export function Pokemondashboard() {
       setNextUrl(response.next);
       setPrevUrl(response.previous);
       await loadPokemon(response.results);
-      //console.log(`pokemon`,pokemon);
       setIsLoading(false);
     }
     fetchPokemon();
@@ -28,9 +27,7 @@ export function Pokemondashboard() {
       let pokemonRecord = await getPokemon(pokemon.url);
       return pokemonRecord;
     }))
-    console.log(`pokemonData`,pokemon_Data);
     setPokemonData(pokemon_Data);
-    //return pokemon_Data;
   }
 
   const next = async () => {
