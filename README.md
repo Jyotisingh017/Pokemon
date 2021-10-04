@@ -15,7 +15,7 @@ Run - \
 `npm test` \
 Launches the test runner in the interactive watch mode. 
 
-### Functionality Covered in this project are:
+### Functionalities Covered in this project are:
 - The Pokémons in a card-based layout in 20 sets.
 - Each card contains the image of the Pokémon \
   o Name \
@@ -28,7 +28,7 @@ and the bottom of the page
 - User is be taken to the details page and present all the information available for
 that Pokémon. 
 
-### Functionality not implemented and can be achieved:
+### Functionalities not implemented and can be achieved:
 - User should have option to choose the number of cards available per page available
 options are 10, 20 and 50.
 - User should be able to search through the Pokémon list using the name and abilities.
